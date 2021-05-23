@@ -1,0 +1,186 @@
+@keyframes light {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 0;}
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.897), black);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    background: linear-gradient(to right top, rgb(255, 255, 255, 0.2), rgb(255, 255, 255, 0.5));
+    border-radius: 50px;
+    backdrop-filter: blur(3rem);
+    margin: 5px;
+}
+p {
+    background: linear-gradient(to right top, rgb(255, 255, 255, 0.2), rgb(255, 255, 255, 0.5));
+    border-radius: 20px;
+    backdrop-filter: blur(3rem);
+    margin: 5px;
+    padding: 10px;
+}
+.Border_Camera {
+    min-height: 60vh;
+    width: 60%;
+    z-index: 1;
+    position: absolute;
+    left: 10rem;
+    display: flex;
+    margin-top: 4rem;
+}
+.Camera {
+    flex: 1;
+}
+.Camera h1 {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+}
+.Camera h1:hover {
+    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.849) inset, 0 5px 50px 0 rgba(255, 255, 255, 0.849);
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.849), 0 0 50px rgba(255, 255, 255, 0.849);
+}
+.Camera img:hover {
+    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.849) inset, 0 5px 50px 0 rgba(255, 255, 255, 0.849);
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.849), 0 0 50px rgba(255, 255, 255, 0.849);
+    border-radius: 10rem;
+}
+.Notes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.Notes h1 {
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+}
+.Notes h1:hover {
+    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.849) inset, 0 5px 50px 0 rgba(255, 255, 255, 0.849);
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.849), 0 0 50px rgba(255, 255, 255, 0.849);
+}
+.Notes p {
+    font-size: 20px;
+    z-index: 2;
+}
+.Notes p:hover {
+    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.849) inset, 0 5px 50px 0 rgba(255, 255, 255, 0.849);
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.849), 0 0 50px rgba(255, 255, 255, 0.849);
+}
+.Ball_1 {
+    background: linear-gradient(to left top, rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 1));
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    top: 1rem;
+    left: 4rem;
+    animation-name: light;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.849) inset, 0 5px 50px 0 rgba(255, 255, 255, 0.849);
+}
+.Ball_1:hover {
+    box-shadow: 0 5px 80px 0 rgba(255, 255, 255, 0.945) inset, 0 5px 80px 0 rgba(255, 255, 255, 0.945);
+}
+.Ball_2 {
+    background: linear-gradient(to left top, rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 1));
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    top: 5rem;
+    right: 20rem;
+    animation-name: light;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.849) inset, 0 5px 50px 0 rgba(255, 255, 255, 0.849);
+}
+.Ball_2:hover {
+    box-shadow: 0 5px 80px 0 rgba(255, 255, 255, 0.945) inset, 0 5px 80px 0 rgba(255, 255, 255, 0.945);
+}
+.Ball_3 {
+    background: linear-gradient(to left top, rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 1));
+    height: 6rem;
+    width: 6rem;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    bottom: 5rem;
+    left: 10rem;
+    animation-name: light;
+    animation-delay: 2s;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.849) inset, 0 5px 50px 0 rgba(255, 255, 255, 0.849);
+}
+.Ball_3:hover {
+    box-shadow: 0 5px 80px 0 rgba(255, 255, 255, 0.945) inset, 0 5px 80px 0 rgba(255, 255, 255, 0.945);
+}
+.Ball_4 {
+    background: linear-gradient(to left top, rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 1));
+    height: 12rem;
+    width: 12rem;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    bottom: 1rem;
+    right: 5rem;
+    animation-name: light;
+    animation-delay: 8s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.849) inset, 0 5px 50px 0 rgba(255, 255, 255, 0.849);
+}
+.Ball_4:hover {
+    box-shadow: 0 5px 80px 0 rgba(255, 255, 255, 0.945) inset, 0 5px 80px 0 rgba(255, 255, 255, 0.945);
+}
+.Ball_5 {
+    background: linear-gradient(to left top, rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 1));
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    bottom: 25rem;
+    right: 55rem;
+    animation-name: light;
+    animation-delay: 2.5s;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.849) inset, 0 5px 50px 0 rgba(255, 255, 255, 0.849);
+}
+.Ball_5:hover {
+    box-shadow: 0 5px 80px 0 rgba(255, 255, 255, 0.945) inset, 0 5px 80px 0 rgba(255, 255, 255, 0.945);
+}
+.Ball_6 {
+    background: linear-gradient(to left top, rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 1));
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    bottom: 10rem;
+    right: 20rem;
+    animation-name: light;
+    animation-delay: 1s;
+    animation-duration: 3.4s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.849) inset, 0 5px 50px 0 rgba(255, 255, 255, 0.849);
+}
+.Ball_6:hover {
+    box-shadow: 0 5px 80px 0 rgba(255, 255, 255, 0.945) inset, 0 5px 80px 0 rgba(255, 255, 255, 0.945);
+}
